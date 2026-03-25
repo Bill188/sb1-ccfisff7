@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Phone } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import NavLink from './NavLink';
 
 const Header: React.FC = () => {
@@ -23,9 +24,11 @@ const Header: React.FC = () => {
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
         <div className="flex items-center">
-          <h1 className={`text-2xl font-bold ${isScrolled ? 'text-primary-900' : 'text-white'}`}>
-            MasterCraft
-          </h1>
+          <Link to="/">
+            <h1 className={`text-2xl font-bold ${isScrolled ? 'text-primary-900' : 'text-white'}`}>
+              MasterCraft
+            </h1>
+          </Link>
         </div>
 
         {/* Desktop Navigation */}

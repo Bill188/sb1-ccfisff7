@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import SectionHeading from './SectionHeading';
 import { Phone, Mail, MapPin, Clock, ArrowRight, Loader2, AlertCircle } from 'lucide-react';
 import { supabase } from '../lib/supabase';
+import emailjs from '@emailjs/browser';
 
 const services = [
   'Residential Cleaning',
@@ -86,36 +87,38 @@ const ContactForm: React.FC = () => {
     setSubmitError(null);
 
     try {
-      const { data, error } = await supabase
+      const contactData = {
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        service: formData.service,
+        message: formData.message,
+        status: 'pending'
+      };
+
+      const { error } = await supabase
         .from('contact_requests')
-        .insert([{
-          name: formData.name,
-          email: formData.email,
-          phone: formData.phone,
-          service: formData.service,
-          message: formData.message,
-          status: 'pending'
-        }])
-        .select()
-        .single();
+        .insert([contactData]);
 
       if (error) throw error;
 
-      // Send email notification
-      const emailResponse = await fetch(`${import.meta.env.VITE_SUPABASE_URL}/functions/v1/send-email`, {
-        method: 'POST',
-        headers: {
-          'Authorization': `Bearer ${import.meta.env.VITE_SUPABASE_ANON_KEY}`,
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(data),
-      });
-
-      const emailResult = await emailResponse.json();
-      
-      if (!emailResponse.ok) {
-        console.error('Email notification error:', emailResult);
-        // Don't throw here, we still want to show success for the form submission
+      // Send email notification via EmailJS
+      try {
+        await emailjs.send(
+          import.meta.env.VITE_EMAILJS_SERVICE_ID,
+          import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+          {
+            from_name: formData.name,
+            from_email: formData.email,
+            phone: formData.phone,
+            service: formData.service,
+            message: formData.message,
+          },
+          import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+        );
+      } catch (emailError) {
+        console.error('Email notification failed:', emailError);
+        // Don't throw — form submission to Supabase already succeeded
       }
       
       setIsSubmitted(true);
@@ -129,9 +132,10 @@ const ContactForm: React.FC = () => {
           message: ''
         });
       }, 3000);
-    } catch (error) {
-      console.error('Error submitting form:', error);
-      setSubmitError('There was an error submitting your request. Please try again.');
+    } catch (error: any) {
+      console.error('Error submitting form:', JSON.stringify(error, null, 2));
+      const msg = error?.message || error?.error_description || String(error);
+      setSubmitError(`Error: ${msg}`);
     } finally {
       setIsSubmitting(false);
     }
@@ -179,7 +183,7 @@ const ContactForm: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="font-medium text-primary-900">Location</h4>
-                  <p className="text-gray-600">123 Main Street, Anytown, USA 12345</p>
+                  <p className="text-gray-600">147 Hobson Street, City Centre, Auckland</p>
                 </div>
               </div>
               

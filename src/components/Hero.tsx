@@ -24,14 +24,14 @@ const Hero: React.FC = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a 
-              href="#services" 
+              href="/#services" 
               className="bg-accent-500 hover:bg-accent-600 text-white font-semibold px-6 py-3 rounded-md transition-colors inline-flex items-center justify-center"
             >
               Explore Services
               <ArrowRight className="ml-2" size={18} />
             </a>
             <a 
-              href="#contact" 
+              href="/#contact" 
               className="bg-white hover:bg-gray-100 text-primary-900 font-semibold px-6 py-3 rounded-md transition-colors inline-flex items-center justify-center"
             >
               Get Free Quote

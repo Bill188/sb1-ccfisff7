@@ -22,7 +22,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ title, description, icon, ima
         <div className="mb-4">{icon}</div>
         <h3 className="text-xl font-semibold text-primary-900 mb-3">{title}</h3>
         <p className="text-gray-600 mb-4">{description}</p>
-        <a href="#contact" className="inline-flex items-center text-accent-500 font-medium hover:text-accent-600 transition-colors">
+        <a href="/#contact" className="inline-flex items-center text-accent-500 font-medium hover:text-accent-600 transition-colors">
           Learn more <ArrowRight className="ml-1" size={16} />
         </a>
       </div>
