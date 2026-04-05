@@ -19,12 +19,12 @@ const TermsOfService: React.FC = () => {
 
           <section className="mb-8">
             <h2 className="text-2xl font-semibold text-primary-800 mb-4">1. Acceptance of Terms</h2>
-            <p className="text-gray-700">By accessing and using the MasterCraft website, you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our website.</p>
+            <p className="text-gray-700">By accessing and using the Master Property Care website, you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our website.</p>
           </section>
 
           <section className="mb-8">
             <h2 className="text-2xl font-semibold text-primary-800 mb-4">2. Services</h2>
-            <p className="text-gray-700">MasterCraft provides professional cleaning, renovation, painting, maintenance, and repair services for residential and commercial properties. Service details, pricing, and availability are subject to change without notice.</p>
+            <p className="text-gray-700">Master Property Care provides professional cleaning, renovation, painting, maintenance, and repair services for residential and commercial properties. Service details, pricing, and availability are subject to change without notice.</p>
           </section>
 
           <section className="mb-8">
@@ -44,12 +44,12 @@ const TermsOfService: React.FC = () => {
 
           <section className="mb-8">
             <h2 className="text-2xl font-semibold text-primary-800 mb-4">5. Intellectual Property</h2>
-            <p className="text-gray-700">All content on this website, including text, images, logos, and design, is the property of MasterCraft and is protected by applicable intellectual property laws. You may not reproduce or distribute any content without prior written consent.</p>
+            <p className="text-gray-700">All content on this website, including text, images, logos, and design, is the property of Master Property Care and is protected by applicable intellectual property laws. You may not reproduce or distribute any content without prior written consent.</p>
           </section>
 
           <section className="mb-8">
             <h2 className="text-2xl font-semibold text-primary-800 mb-4">6. Limitation of Liability</h2>
-            <p className="text-gray-700">MasterCraft shall not be liable for any indirect, incidental, or consequential damages arising from the use of this website. The website is provided "as is" without any warranties of any kind.</p>
+            <p className="text-gray-700">Master Property Care shall not be liable for any indirect, incidental, or consequential damages arising from the use of this website. The website is provided "as is" without any warranties of any kind.</p>
           </section>
 
           <section className="mb-8">

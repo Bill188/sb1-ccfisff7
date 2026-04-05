@@ -7,7 +7,7 @@ const testimonials = [
     id: 1,
     name: 'Sarah Johnson',
     role: 'Homeowner',
-    content: 'The renovation team at MasterCraft exceeded our expectations with their attention to detail and quality workmanship. Our kitchen has been completely transformed and we couldn\'t be happier with the results.',
+    content: 'The renovation team at Master Property Care exceeded our expectations with their attention to detail and quality workmanship. Our kitchen has been completely transformed and we couldn\'t be happier with the results.',
     rating: 5,
     image: 'https://images.pexels.com/photos/762020/pexels-photo-762020.jpeg?auto=compress&cs=tinysrgb&w=128'
   },
@@ -15,7 +15,7 @@ const testimonials = [
     id: 2,
     name: 'Michael Rodriguez',
     role: 'Office Manager',
-    content: 'We\'ve been using MasterCraft\'s commercial cleaning services for our office building for the past 3 years, and they consistently deliver excellent results. Our workspace is always immaculate, and their staff is professional and thorough.',
+    content: 'We\'ve been using Master Property Care\'s commercial cleaning services for our office building for the past 3 years, and they consistently deliver excellent results. Our workspace is always immaculate, and their staff is professional and thorough.',
     rating: 5,
     image: 'https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=128'
   },
@@ -23,7 +23,7 @@ const testimonials = [
     id: 3,
     name: 'Emily Thompson',
     role: 'Property Manager',
-    content: 'MasterCraft has been our go-to maintenance partner for multiple properties. Their response time is quick, their work is high quality, and they\'re always professional. I highly recommend their services for any property maintenance needs.',
+    content: 'Master Property Care has been our go-to maintenance partner for multiple properties. Their response time is quick, their work is high quality, and they\'re always professional. I highly recommend their services for any property maintenance needs.',
     rating: 4,
     image: 'https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=128'
   },
@@ -31,7 +31,7 @@ const testimonials = [
     id: 4,
     name: 'David Wilson',
     role: 'Restaurant Owner',
-    content: 'The team at MasterCraft did an amazing job renovating our restaurant. They worked efficiently to minimize downtime and delivered a beautiful space that our customers love. The attention to detail was impressive.',
+    content: 'The team at Master Property Care did an amazing job renovating our restaurant. They worked efficiently to minimize downtime and delivered a beautiful space that our customers love. The attention to detail was impressive.',
     rating: 5,
     image: 'https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=128'
   },
@@ -39,7 +39,7 @@ const testimonials = [
     id: 5,
     name: 'Jennifer Adams',
     role: 'Homeowner',
-    content: 'We hired MasterCraft for a deep cleaning service and were blown away by the results. Every corner of our home was spotless, and the team was friendly and professional. We\'ve now signed up for regular cleaning services.',
+    content: 'We hired Master Property Care for a deep cleaning service and were blown away by the results. Every corner of our home was spotless, and the team was friendly and professional. We\'ve now signed up for regular cleaning services.',
     rating: 5,
     image: 'https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=128'
   }

@@ -14,7 +14,7 @@ const AboutUs: React.FC = () => {
     <section id="about" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <SectionHeading
-          title="About MasterCraft"
+          title="About Master Property Care"
           subtitle="Excellence in cleaning, maintenance, and renovation since 2008"
         />
         
@@ -36,13 +36,13 @@ const AboutUs: React.FC = () => {
           <div>
             <h3 className="text-2xl font-semibold text-primary-900 mb-4">Your Trusted Partner for Property Excellence</h3>
             <p className="text-gray-600 mb-6">
-              At MasterCraft, we're dedicated to transforming and maintaining spaces with unmatched quality and attention to detail. Our comprehensive range of services covers everything from routine cleaning to complete property renovations.
+              At Master Property Care, we're dedicated to transforming and maintaining spaces with unmatched quality and attention to detail. Our comprehensive range of services covers everything from routine cleaning to complete property renovations.
             </p>
             <p className="text-gray-600 mb-6">
               Founded in 2008, our team of skilled professionals brings expertise and passion to every project, ensuring results that exceed expectations. We believe in transparent communication, quality craftsmanship, and customer satisfaction at every step.
             </p>
             <p className="text-gray-600 mb-8">
-              Whether you're looking for regular cleaning services, maintenance solutions, or planning a major renovation, MasterCraft delivers excellence with professionalism and integrity.
+              Whether you're looking for regular cleaning services, maintenance solutions, or planning a major renovation, Master Property Care delivers excellence with professionalism and integrity.
             </p>
             
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">

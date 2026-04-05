@@ -26,7 +26,7 @@ const Header: React.FC = () => {
         <div className="flex items-center">
           <Link to="/">
             <h1 className={`text-2xl font-bold ${isScrolled ? 'text-primary-900' : 'text-white'}`}>
-              MasterCraft
+              Master Property Care
             </h1>
           </Link>
         </div>

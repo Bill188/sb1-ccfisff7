@@ -38,7 +38,7 @@ const Footer: React.FC = () => {
       <div className="container mx-auto px-4 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
-            <h2 className="text-2xl font-bold text-white mb-4">MasterCraft</h2>
+            <h2 className="text-2xl font-bold text-white mb-4">Master Property Care</h2>
             <p className="mb-6">
               Professional cleaning, maintenance, and renovation services for residential and commercial properties.
             </p>
@@ -166,7 +166,7 @@ const Footer: React.FC = () => {
       
       <div className="border-t border-gray-800 py-6">
         <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
-          <p>&copy; {new Date().getFullYear()} MasterCraft. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Master Property Care. All rights reserved.</p>
           <div className="mt-4 md:mt-0">
             <Link to="/terms-of-service" className="text-sm hover:text-accent-400 transition-colors mr-6">
               Terms of Service
