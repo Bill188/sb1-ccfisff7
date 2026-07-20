@@ -39,7 +39,7 @@ const Header: React.FC = () => {
           <NavLink href="#testimonials" isScrolled={isScrolled}>Testimonials</NavLink>
           <NavLink href="#contact" isScrolled={isScrolled}>Contact</NavLink>
           <a 
-            href="tel:+64277071288" 
+            href="tel:+64276888616" 
             className="flex items-center gap-2 bg-accent-500 hover:bg-accent-600 text-white px-4 py-2 rounded-md transition-colors"
           >
             <Phone size={18} />
@@ -66,7 +66,7 @@ const Header: React.FC = () => {
             <NavLink href="#testimonials" isScrolled={true} onClick={() => setIsMenuOpen(false)}>Testimonials</NavLink>
             <NavLink href="#contact" isScrolled={true} onClick={() => setIsMenuOpen(false)}>Contact</NavLink>
             <a 
-              href="tel:+64277071288" 
+              href="tel:+64276888616" 
               className="flex items-center gap-2 bg-accent-500 text-white px-4 py-2 rounded-md w-full justify-center"
               onClick={() => setIsMenuOpen(false)}
             >
