@@ -63,7 +63,7 @@ const PrivacyPolicy: React.FC = () => {
 
           <section className="mb-8">
             <h2 className="text-2xl font-semibold text-primary-800 mb-4">6. Contact Us</h2>
-            <p className="text-gray-700">If you have any questions about this Privacy Policy, please contact us at <a href="mailto:bllzhn@hotmail.com" className="text-accent-500 hover:underline">bllzhn@hotmail.com</a> or call us at 027 707 1288.</p>
+            <p className="text-gray-700">If you have any questions about this Privacy Policy, please contact us at <a href="mailto:info@masterpropertycare.co.nz" className="text-accent-500 hover:underline">info@masterpropertycare.co.nz</a> or call us at 027 707 1288.</p>
           </section>
         </div>
       </main>
